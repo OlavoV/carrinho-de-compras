@@ -90,18 +90,17 @@ setShoppingCurso(newShoppingCurso)
   
   return (
     <div className='container'>
-        <h1>OCell</h1>
-        <Link href="/config" className='link-config'>
-                Ir para Configurações
-            </Link>
-     
+        <h1>OCell</h1>     
     <ul>
         {cursos.map(curso =>(
         <li key={curso.id} className='produto-item'>
             <img src={curso.imageUrl} alt={curso.titulo} className='produto-imagem' />
             <div className='produto-info'>
-            <p>{curso.titulo}</p>
+            <p className='tituloprod'>{curso.titulo}</p>
             <p> R${formatarPreco(curso.preco)}</p>
+            <Link href="/config" className='link-config'>
+                Ir para Configurações
+            </Link>
             <button onClick={() =>handleAddCurso(curso.id)} className='botaoAdd'>Adicionar</button>
             </div>
           

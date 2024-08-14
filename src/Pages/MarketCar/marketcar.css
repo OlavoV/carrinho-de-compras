@@ -112,3 +112,7 @@ ul {
     border-top: 1px solid #ddd; /* Linha sutil acima dos itens do carrinho */
     padding-top: 15px;
 }
+
+.tituloprod{
+    font-weight: bold;
+}
