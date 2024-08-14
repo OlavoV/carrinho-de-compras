@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'; // Importar o componente Link
 import '../MarketCar/marketcar.css'
-
+import '../config'
 
 
 interface ICurso {
